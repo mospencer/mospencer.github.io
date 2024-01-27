@@ -2,10 +2,10 @@ const myImage = document.querySelector("img");
 
 myImage.onclick = () => {
   const mySrc = myImage.getAttribute("src");
-  if (mySrc === "firefox-icon.png") {
-    myImage.setAttribute("src", "firefox2.png");
+  if (mySrc === "books.png") {
+    myImage.setAttribute("src", "pasta.png");
   } else {
-    myImage.setAttribute("src", "firefox-icon.png");
+    myImage.setAttribute("src", "books.png");
   }
 };
 
@@ -18,7 +18,7 @@ function setUserName() {
       setUserName();
     } else {
       localStorage.setItem("name", myName);
-      myHeading.textContent = `Mozilla is cool, ${myName}`;
+      myHeading.textContent = `Hello, ${myName}`;
     }
   }
 
